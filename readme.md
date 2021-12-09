@@ -21,12 +21,14 @@ Useful commands
 ================
 
 1. view help
-~~~ bash
-python .\enky_backup_checksum.py -h
-~~~
+    ``` bash
+    python .\enky_backup_checksum.py -h
+    ```
 
 2. create a full backup of "target_dir" and store it in "backup_loc". (Use a separate backup_loc for different target_dir)
- python .\enky_backup_checksum.py backup -bc -bf -bl backkup_loc -bt target_dir
+    ``` bash
+    python .\enky_backup_checksum.py backup -bc -bf -bl backkup_loc -bt target_dir
+    ```
 
 3. Updating backup with new changes:
 
@@ -51,12 +53,14 @@ python .\enky_backup_checksum.py -h
 
 4) Viewing available backups at backup_loc
 
-~~~ bash
-python .\enky_backup_checksum.py backup -bv -bpv -bl backkup_loc
-~~~
+    ```bash
+    python .\enky_backup_checksum.py backup -bv -bpv -bl backkup_loc
+    ```
 
 5) Restoring a specific backup. #number is the index of the version seen from the previous command. This will restore data to target_dir
- python .\enky_backup_checksum.py backup -br -brn #number -bl backkup_loc -bt target_dir
+    ``` bash
+    python .\enky_backup_checksum.py backup -br -brn #number -bl backkup_loc -bt target_dir
+    ```
 
 6. Creating checksums of a directory
 
